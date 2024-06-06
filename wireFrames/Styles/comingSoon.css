@@ -1,0 +1,226 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Tauri&display=swap');
+
+/* Reset & Global styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Tauri", sans-serif;
+  background-color: #e2dede;
+  scroll-snap-type: y proximity;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Header styles */
+header {
+  font-size: 0;
+  /* TO REMOVE EXCESS FROM 'a' TAG */
+  overflow: hidden;
+  position: absolute;
+  margin: 0 10px;
+  padding: 10px 0;
+  top: 10px;
+  left: 22px;
+  right: 22px;
+}
+
+header img {
+  width: 175px;
+}
+
+/* Section styles */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  scroll-snap-align: start;
+}
+
+#animation {
+  position: absolute;
+  margin: auto;
+  width: 100vw;
+  height: 38vh;
+  top: 0;
+  bottom: 0;
+  filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  font-size: 180pt;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+/* Scroll arrow styles */
+#scroll-arrow {
+  position: absolute;
+  left: 50%;
+  top: 25px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 43px;
+  height: 43px;
+  border-bottom: 4px solid #c42127;
+  border-right: 4px solid #c42127;
+  z-index: 9;
+  transform: translate(-50%, 0%) rotate(45deg);
+  animation: fade_move_down 2s ease-in-out infinite;
+  transition: transform 0.3s ease; /* Added transition for smooth rotation */
+  position: sticky;
+}
+#scroll-arrow.flipped {
+  transform: translate(-50%, 0%) rotate(225deg);
+}
+@keyframes fade_move_down {
+  0%,
+  100% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+
+
+/* Subscribe Box Styles */
+.subscribe-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background-image: url('media/wp10509093.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-box {
+  flex: 1;
+  padding: 20px;
+  color: #fff;
+  height: 436px;
+
+  /* Glass Effect */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.email-box {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.email-box h3 {
+  margin: 5px;
+  font-size: 25px;
+}
+
+.email-box h1 {
+  margin-top: 80px;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  font-size: 65px;
+  color: #c42127;
+}
+
+.email-box p {
+  margin-top: 0;
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+/* Form Styles */
+.form {
+  margin-top: 20px;
+}
+
+.form input[type="email"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 2px solid #a71922;
+  font-size: 16px;
+}
+.form input[type="email"]:focus {
+  outline: none;
+}
+
+.form button[type="submit"] {
+  width: 25%;
+  padding: 10px;
+  background-color: #c42127;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #a71922;
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  position: fixed;
+  bottom: 10px;
+  left: 22px;
+  right: 22px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #c42127;
+  margin: 0 10px;
+}

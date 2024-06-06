@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./wireFrame-1.html">
+
+    <!-- Chart.js import -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+
+    <!-- Tab Name &Logo -->
+    <link rel="shortcut icon" href="../Images/Artboard_1.png" type="image/x-icon" />
+    <title>Fair-Game&#8482; | wireFrame-1</title>
+
+
+    <!-- Fair Game Logo -->
+    <header>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Scholar Garment</a>
+            <a href="#">Shop</a>
+            <a href="#">Repository</a>
+          </div>
+
+          <span class="pointer"  onclick="openNav()">&#9776;
+             <a href="./wireFrame-1.html"><img class="logo" src="../Images/Fair-GameLogo.png" alt="Fair Game Logo"/></a>
+         </span> 
+      </header>
+</head>
+
+
+<body>
+
+<!-- Welcome  -->
+    <div class="welcomeContainer">
+        <div class="welcomePost">
+            <div class="Welcome">
+                <h2 class="welcomeTitle">Welcome</h2>
+                
+                <p class="welcomeText">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, officiis. Similique facere error quod minus nisi ducimus rem fugiat, ullam repellat aliquid ipsa aut nam molestiae 
+                    exercitationem cumque asperiores. Temporibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam ducimus quos vero, dolores aut quod dignissimos facilis 
+                    maxime commodi fuga quae. Reiciendis id atque necessitatibus officia quidem magni dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi accusantium laborum 
+                    repellat qui ut sed, reiciendis earum tenetur eaque illum, asperiores ex odit et fuga ea itaque. Repellendus, porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolorum ipsam perferendis obcaecati tempore illum minus provident voluptas necessitatibus nesciunt, repellat.
+                </p>
+                <a class="welcomeLearn" href="#">Learn more</a>
+            </div>
+            
+            <div>
+                <video src="./Videos/DIY Clothes! Cut Up Back T-Shirt for Summer.mp4" type="video/mp4" width="95%" height="30%" controls autoplay muted></video>
+            </div>
+        </div>
+
+        <div class="fetureBlog">
+            <img class="blogLink "src="../Images/Blog-One.jpg" alt="">
+            <a class="blogLearn" href="#">Learn more</a>
+        </div>
+    </div>
+
+
+
+<!-- Scholar Garment -->
+    <div class="scholarGarments" >
+        <h3 class="tShirt-Title">Scholar Garments</h3>
+        
+        <div class=" tshirtContainer column">
+            <div> 
+                <img class="tShirt-Image" src="../Images/home_Three.png" alt="">
+                <p class="tShirt-Text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio </p>
+            </div>
+
+            <div> 
+                <img class="tShirt-Image" src="../Images/home_Four.png" alt="">
+                <p class="tShirt-Text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio </p>
+            </div>
+
+            <div> 
+                <img class="tShirt-Image" src="../Images/home_Five.png" alt="">
+                <p class="tShirt-Text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio </p>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Donate Here -->
+    <div class="column">
+        <div class="pieChart">
+            <canvas id="myPieChart" ></canvas>
+        </div>
+
+        <div class="explantation">
+            <p class="explainLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi eligendi vitae iusto debitis dignissimos reprehenderit, odio expedita. 
+                Error ratione nulla et illum totam voluptas nesciunt laborum labore a saepe!
+            </p>
+
+            <p class="explainRight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi eligendi vitae iusto debitis dignissimos reprehenderit, odio expedita. 
+                Error ratione nulla et illum totam voluptas nesciunt laborum labore a saepe!
+            </p>
+
+            <div class="donation">
+                <h2 class="donationTitle">DONATE HERE</h2>
+
+                <form action="/action_page.php" id="form1">
+                    <input type="text" name="" id="amount" placeholder="Amount $"> 
+                    <input type="submit" id="submit" value="Donate">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Footer  -->
+    <footer>
+        <h3><a class="footItem" href="">Blog</a></h3>
+        <h3><a class="footItem" href="">Shop</a></h3>
+        <h3><a class="footItem" href="">Contact Us</a> </h3>
+        <hr>
+        <h3 ><a class="footItem terms" href="">Terms of Service</a></h3>
+    </footer>
+
+    <script src="./javaScript/wireFrame-1.js"></script>
+</body>
+</html>

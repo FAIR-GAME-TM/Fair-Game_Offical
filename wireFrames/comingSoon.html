@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../Images/Artboard_1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <title>Fair-Game&#8482; | Coming Soon</title>
+  </head>
+
+
+
+  <body>
+
+<!--Container For Logo & animation  -->
+    <div id="section1" class="section">
+
+<!-- Fair Game Logo -->
+      <header>
+        <a href="./comingSoon.html">
+          <img class="logo" src="../Images/Fair-GameLogo.png" alt="Fair Game Logo"/>
+        </a>
+      </header>
+
+
+<!-- Coming soon animation START -->
+      <div id="animation">
+        <span id="text1"></span>
+        <span id="text2"></span>
+      </div>
+      <svg id="filters">
+        <defs>
+          <filter id="threshold">
+            <feColorMatrix
+              in="SourceGraphic"
+              type="matrix"
+              values="1 0 0 0 0
+                              0 1 0 0 0
+                              0 0 1 0 0
+                              0 0 0 255 -140"
+            ></feColorMatrix>
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+
+<!-- Scroll Arrow -->
+    <a id="scroll-arrow" href="#">
+      <span></span>
+    </a>
+
+<!-- Newsletter -->
+    <div id="section2" class="section">
+      <div class="subscribe-box">
+        <div class="blog-box">
+          <h2>Blog Go Here</h2>
+        </div>
+        <div class="email-box"> <!-- *** -->
+          <h3>Join our Newsletter</h3>
+            <h1>SUBSCRIBE</h1>
+            <p>Be updated as soon as we launch</p>
+          <form class="form" action="https://gmail.us21.list-manage.com/subscribe/post?u=b965409077d04c4e4ef521b0f&amp;id=04c5f8cf29&amp;f_id=0095f5e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+            <input type="email" placeholder="Enter email address" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" />
+            
+            <div class="button-container">
+              <button type="submit" class="submit-btn" name="subscribe" id="mc-embedded-subscribe" value="Subscribe">SUBMIT</button>
+            </div>
+
+            <!-- <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                <input type="text" name="b_b965409077d04c4e4ef521b0f_04c5f8cf29" tabindex="-1" value="">
+            </div> -->
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer>
+      <div class="footer-left">
+        <a href="./comingSoon.html">INFO</a>
+      </div>
+      <div class="footer-right">
+        <a href="https://twitter.com/" target="_blank">TWITTER</a>
+        <a
+        href="https://www.facebook.com/people/Fair-Game-Studios/61555795327202/"
+        target="_blank"
+        >FACEBOOK</a
+        >
+        <a
+        href="https://www.instagram.com/fairgamescreativestudios/"
+        target="_blank"
+        >INSTAGRAM</a
+        >
+      </div>
+    </footer>
+
+    <script src="./javaScript/comingSoon.js"></script>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+
+  </body>
+</html>
