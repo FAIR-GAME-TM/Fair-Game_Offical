@@ -14,12 +14,12 @@ header{
 .nav{
     width: 90%;
     margin-top: 0.5%;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
 .navItem{
     padding-top: 5%;
-    margin-left: 2%;
+    margin-left: 8%;
     text-decoration: none;
     font-size: 25px;
     color: black;
@@ -31,7 +31,7 @@ header{
 }
 
 .contact{
-    margin-left: 28%;
+    margin-left: 35%;
     padding:1%;
     font-size: 25px;
     text-decoration: none;
