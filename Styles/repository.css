@@ -56,10 +56,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    margin: 0 auto;
     background-color: #7e7a7a;
-    /* background: url('your-background-image.jpg');
-    background-size: cover; */
+    width: 95%;
 }
 .login-container {
     margin: 0 auto;
