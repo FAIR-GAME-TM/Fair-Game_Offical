@@ -1,0 +1,363 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+   margin-left: 100px;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.navbar {
+    background-color: #333;
+    
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    position: relative;
+}
+.nav-item .nav-link .dropdown-content:hover {
+    display: list-item;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+.nav-link:hover {
+    display: block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+.description {
+    margin-left: 40px;
+    background-color: hsl(183, 14%, 72%);
+    width: 100%;
+    margin-right: 5%;
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+.description2 {
+    margin-left: 40px;
+    background-color: hwb(45 82% 15%);
+    width: 100%;
+    margin-right: 5%;
+}
+
+.text-container {
+    display: flex;
+    width: 100%;
+    max-width: 1285px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top:20px;
+}
+
+.section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-section {
+    background-color: #e0e0e0; /* Optional: Add background color to distinguish sections */
+    width: 100%;
+}
+
+.right-section {
+    background-color: #f9f9f9; /* Optional: Add background color to distinguish sections */
+    width: 100%;
+    margin-left: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.toggle-container {
+    margin-top: 20px;
+}
+
+.toggle-item {
+    margin-bottom: 10px;
+}
+
+.parent-text {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #d0d0d0;
+    border-radius: 4px;
+}
+
+.child-text {
+    display: none;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #c0c0c0;
+    border-radius: 4px;
+}
+
+.arrow {
+    font-size: 12px;
+    transition: transform 0.3s;
+}
+
+.parent-text.active .arrow {
+    transform: rotate(180deg);
+}
+
+.antique-red-label {
+    display: block;
+    width: 200px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background-color: rgb(196,33,39); /* Antique red color */
+    border: 1px solid #000; /* Optional: add a border */
+}
+
+.black-label {
+    display: block;
+    width: 200px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background-color: rgb(0,0,0); /* Antique red color */
+    border: 1px solid #cbc5c5; /* Optional: add a border */
+}
+
+#fg-title {
+    display:block;
+    margin-top: 50px;
+    text-align: center;
+    font-size: larger;
+    
+}
+
+#contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto; /* Center the container */
+    padding: 0 15%; /* 15% left and right padding */
+}
+
+#contact-info p {
+    margin: 0;
+    padding: 0;
+    flex: 1; /* Distribute available space equally */
+    text-align: center; /* Center text within each paragraph */
+}
+
+.semi-container {
+    display: flex;
+    
+    width: 70%;
+    padding: 5%;
+    margin-left: 25%;
+    
+}
+
+.semi-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15cm;
+    height: 10cm;
+    background-color: black;
+    border-radius: 8cm 8cm 0 0; /* Top semi-circle */
+    /* border-radius: 0 0 6cm 6cm; /* Bottom semi-circle */
+    overflow: hidden;
+}
+
+.semi-circle p {
+    text-align: center;
+    margin: 0;
+}
+
+.semi-circle h3 {
+    color: white;
+    text-align: center;
+    margin-left: 90px;
+   
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    margin-top: 250px;
+    margin-right: 100px;
+    
+}
+
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+   
+}
+
+#emailForm {
+    margin-right: 50px;
+}
+
+.input-label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #333;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+    transition: border-bottom-color 0.3s;
+}
+
+input[type="email"]:focus {
+    border-bottom-color: #007BFF;
+}
+
+input[type="email"]:focus + .input-label,
+input[type="email"]:not(:placeholder-shown) + .input-label {
+    top: 0;
+    font-size: 12px;
+    color: #007BFF;
+}
+
+.input-group:hover .input-label {
+    border-bottom-color: rgba(0, 0, 0, 1);
+    opacity: 1;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
