@@ -2,16 +2,36 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     margin: 0;
-    padding: 20px;
+  
+}
+
+.navbar {
+    background-color: #333;
+    width: 100%;
+    margin-left: 0%;
+    
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    position: relative;
 }
 .container {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-right: 0;
 }
 .section {
-    background-color: #fff;
+    background-color: rgba(143, 145, 138, 0.688);
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -22,24 +42,24 @@ body {
     height: 800px; /* Increased height */
 }
 .section h2 {
-    background-color: #7c650b; /* Dark-yellow color */
+    background-color: hsl(50, 13%, 91%); 
     padding: 10px;
     margin: 0;
-    color: #fff;
+    color: #161313;
     text-align: center;
 }
 .item {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid hsl(0, 4%, 45%);
 }
 .item h3 {
-    background-color: #8b7f4b; /* Dark-yellow color */
+    background-color: hwb(49 78% 14% / 0.134);
     padding: 10px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    color: #fff;
+    color:black;
 }
 .item h3:after {
     content: '▼'; /* Arrow pointing down initially */
@@ -53,6 +73,7 @@ body {
     padding: 10px;
     border-top: 1px solid #ddd;
     gap: 20px;
+    margin-right: 50px;
 }
 .content img {
     width: 100px;
@@ -65,7 +86,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   /* text-decoration: underline;*/
 }
 .content .text-block p {
     margin: 5px 0;
@@ -76,10 +96,10 @@ body {
 }
 .contact-link a {
     text-decoration: none;
-    color: rgb(240, 218, 44);
+    color: white;
     display: flex;
     align-items: center;
-    background-color:rgb(134, 189, 186) ;
+    background-color:gray ;
     padding: 5px 10px;
     border-radius: 5px;
 }

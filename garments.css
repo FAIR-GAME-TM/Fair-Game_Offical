@@ -9,8 +9,30 @@ body {
     background-color: #d3d3d3; /* Light grey */
 }
 
+.navbar {
+    background-color: #333;
+    width: 100%;
+   /* margin-left: 15%;
+    padding-right: 5%;
+    */
+    
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    position: relative;
+    padding: auto;
+}
 .options-container {
     margin: 20px 0;
+    display: flex;
 }
 
 .option-button {
@@ -18,10 +40,11 @@ body {
     color: white;
     border: none;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 20px 10px;
     cursor: pointer;
     border-radius: 4px;
     font-size: 16px;
+    display: flex;
 }
 
 .option-button:hover {
@@ -37,8 +60,14 @@ body {
     display: none;
 }
 
+#tshirt-section {
+    display: block;
+    width: 55%;
+}
+
 #hoodie-section {
     display: block;
+    width: 95%;
 }
 
 .slideshow-container {
@@ -102,17 +131,18 @@ body {
 
 .headers {
     margin-top: 20px;
+    width: 100%;
 }
 
 .header {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .header h3 {
     cursor: pointer;
     margin: 0;
     padding: 10px;
-    background-color: #b8860b; /* Dark Yellow */
+    background-color: #a19f99; /* Dark Yellow */
     color: white;
     border-radius: 4px;
 }
@@ -124,7 +154,7 @@ body {
 
 .header-info {
     display: none;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-top: none;
     background-color: #f9f9f9;

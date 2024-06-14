@@ -1,9 +1,12 @@
+/* Ensure all elements use border-box */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-   margin-left: 100px;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .login-container {
@@ -53,7 +56,12 @@ button:hover {
 
 .navbar {
     background-color: #333;
-    
+    width: 100%;
+}
+
+#text-scholar-garment {
+    margin-left: 10%;
+    margin-top: 20px;
 }
 
 .nav-list {
@@ -67,9 +75,6 @@ button:hover {
 .nav-item {
     position: relative;
 }
-.nav-item .nav-link .dropdown-content:hover {
-    display: list-item;
-}
 
 .nav-link {
     font-size: 16px;
@@ -82,11 +87,6 @@ button:hover {
 .nav-link:hover {
     background-color: #555;
 }
-
-.nav-link:hover {
-    display: block;
-}
-
 
 .dropdown-content {
     display: none;
@@ -119,60 +119,50 @@ button:hover {
     display: block;
 }
 
-.container {
+.container, .container2 {
     display: flex;
-    width: 100%;
-    margin-left: 50px;
-}
-.description {
-    margin-left: 40px;
-    background-color: hsl(183, 14%, 72%);
-    width: 100%;
-    margin-right: 25%;
-    padding-top: 5%;
-    padding-left: 8%;
+    width: 90%;
+    margin: 20px auto;
 }
 
-.container2 {
-    display: flex;
-    width: 100%;
-    margin-top: 10px;
-    margin-left: 50px;
-   
-}
-.description2 {
+.description, .description2 {
     margin-left: 40px;
-    background-color: hwb(45 82% 15%);
     width: 100%;
-    margin-right: 25%;
-    padding-top: 5%;
-    padding-left: 8%;
+    padding: 20px;
+}
+
+.description {
+    background-color: hsl(183, 14%, 72%);
+}
+
+.description2 {
+    background-color: hwb(45 82% 15%);
 }
 
 .text-container {
     display: flex;
-    width: 100%;
-    max-width: 1285px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 20px auto;
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-top:20px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .section {
-    width: 100%;
+    width: 48%;
     padding: 20px;
     box-sizing: border-box;
 }
 
 .left-section {
-    background-color: #e0e0e0; /* Optional: Add background color to distinguish sections */
-    width: 100%;
+    background-color: #e0e0e0;
 }
 
 .right-section {
-    background-color: #f9f9f9; /* Optional: Add background color to distinguish sections */
-    width: 100%;
-    margin-left: 20px;
+    background-color: #f9f9f9;
+    margin-left: 4%;
 }
 
 h2 {
@@ -220,22 +210,21 @@ p {
 
 .antique-red-label {
     display: block;
-    width: 200px; /* Adjust the width as needed */
-    height: 50px; /* Adjust the height as needed */
-    background-color: rgb(196,33,39); /* Antique red color */
-    border: 1px solid #000; /* Optional: add a border */
+    width: 200px;
+    height: 50px;
+    background-color: rgb(196,33,39);
+    border: 1px solid #000;
 }
 
 .black-label {
     display: block;
-    width: 200px; /* Adjust the width as needed */
-    height: 50px; /* Adjust the height as needed */
-    background-color: rgb(0,0,0); /* Antique red color */
-    border: 1px solid #cbc5c5; /* Optional: add a border */
+    width: 200px;
+    height: 50px;
+    background-color: rgb(0,0,0);
+    border: 1px solid #cbc5c5;
 }
 
-#fg-title,
-#contact-info {
+#fg-title, #contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,7 +234,7 @@ p {
 #contact-info {
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    gap: 20px;
 }
 
 #contact-info p {
@@ -263,7 +252,8 @@ p {
 .semi-circle {
     background: black;
     color: white;
-    width: 800px;
+    width: 90%;
+    max-width: 800px;
     height: 400px;
     border-radius: 400px 400px 0 0;
     display: flex;
@@ -276,8 +266,7 @@ p {
     margin-bottom: 15px;
 }
 
-.semi-circle h3,
-.semi-circle p {
+.semi-circle h3, .semi-circle p {
     margin: 10px 0;
 }
 
@@ -318,8 +307,7 @@ input[type="email"]:focus {
     pointer-events: none;
 }
 
-input:focus + .input-label,
-input:not(:placeholder-shown) + .input-label {
+input:focus + .input-label, input:not(:placeholder-shown) + .input-label {
     top: -20px;
     left: 10px;
     font-size: 12px;
@@ -338,4 +326,11 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+/* Ensure all elements use border-box */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
