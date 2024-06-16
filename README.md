@@ -48,7 +48,7 @@ Project Objectives
 
 
 
-**************************************** ___________ Put Course Staring Date & Ending Date __________ ********************************
+****************** ___________ Put Course Staring Date & Ending Date __________ *******************
 
 Programmer 1: 
 Major: 
@@ -72,5 +72,5 @@ Project Objectives
    2. 
    3. 
 
-**************************************** ___________ Put Course Staring Date & Ending Date __________ ********************************
+****************** ___________ Put Course Staring Date & Ending Date __________ *******************
 
