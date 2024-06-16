@@ -34,7 +34,7 @@ Project Objectives
   2. Add styling and good programming structure for the next programmer
 
 
- The goal for next Programmers
+ The goal for the next Programmers
    1. Optimize the project code for better scaling on Desktops, Tablet, & Phone.
    2. Add more Javascript for better animation
    3. Add more CSS for better Styling
