@@ -1,0 +1,150 @@
+/*************************************************************************** Navigation & header ***************************************************************************/
+header{
+    display: flex;
+    margin-top: 2% ;
+    vertical-align: center;
+}
+.logoImg{
+    padding-left: 2%;
+    width:3.5%;
+}
+
+.logo{
+    margin-left: 0.3%;
+    width:15% ;
+    height:10% ;
+}
+
+.nav{
+    width: 90%;
+    margin-top: 0.5%;
+    margin-left: 5%;
+}
+
+.navItem{
+    padding-top: 5%;
+    margin-left: 8%;
+    /* margin-left: 4%; */
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.navItem:hover{
+    font-weight: bold;
+    color: red;
+}
+
+
+.contact{
+    margin-left: 20%;
+    padding:1%;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+.contact:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(243, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.Shop{
+    font-weight: bold;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+/**************************************** Shop Title styles ****************************************/
+
+.shopName {
+    display: flex;
+    padding: 10px 0;
+    margin: 3% 5% 3% 5%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+}
+.shopTitle{
+    font-size: 40px;
+    margin-left: 45%;
+}
+.cart{
+    width: 13.5%;
+    margin-left: 18%;
+}
+
+/**************************************** Shop styles ****************************************/
+
+.container{
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 15%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+}
+
+.product-item{
+    border-radius: 10% 10% 0% 0%;
+    height: 70%;
+}
+
+.product-Top{
+    margin-bottom: 0%;
+}
+
+.product-Img{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 0%;
+    border-radius: 10% 10% 0% 0%;
+
+}
+
+.product-Bottom{
+    margin-top: 0%;
+    border-radius: 0% 0% 10% 10%;
+    border: 1px solid black;
+}
+
+.product-Name{
+    padding-top: 5%;
+    color: #000000;
+    text-align: center;
+}
+
+.product-Price{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+
+.product-item:hover .product-Name{
+    color: red;
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
