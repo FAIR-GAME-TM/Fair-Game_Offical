@@ -16,6 +16,7 @@ Github Credentials
 
 
 ***************************************************************************************************************** May 14th - June 17th 2024 *********************************************************************************************************************
+
 Programmer 1: Billy Pierre
 Major: Robotics & Embedded Systems
 Gender: Male
@@ -38,6 +39,7 @@ Project Objectives
    1. Optimize the project code for better scaling on Desktops, Tablet, & Phone.
    2. Add more Javascript for better animation
    3. Add more CSS for better Styling
+
 ********************************************************************************************************************* May 14th - June 17th 2024 *********************************************************************************************************************
 
 
@@ -48,6 +50,7 @@ Project Objectives
 
 
 *********************************************************************************** ___________ Put Course Staring Date & Ending Date __________ *********************************************************************************************************************
+
 Programmer 1: 
 Major: 
 Gender: 
@@ -65,7 +68,7 @@ Project Objectives
   3. 
 
 
- The goal for next Programmers
+ The goal for the next Programmers
    1. 
    2. 
    3. 
