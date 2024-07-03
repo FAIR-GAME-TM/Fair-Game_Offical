@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./Styles/garments.css">
+
+    <!-- Tab Name &Logo -->
+    <link rel="shortcut icon" href="./Images/logo/Artboard_1.png" type="image/x-icon" />
+
+    <title>Fair-Game&#8482; | Garments Page</title>
+    
+    <nav class="navbar">
+        <a class="fairLogo" href="./index.html"><img class="logo" src="./Images/logo/Fair-GameLogo.png" alt="Fair Game Logo"/></a>
+        <ul class="nav-list">
+
+            <li class="nav-item">
+                <a href="./portfolio.html" class="nav-link">3D View</a>
+            </li>
+            <li class="nav-item">
+                <a href="./garments.html" class="nav-link">Garment</a>
+            </li>
+            <li class="nav-item">
+                <a href="./source.html" class="nav-link">Source</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Tutorial</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Documentation</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <br>
+    <br>
+   <br> 
+</head>
+
+
+<body>
+    <div class="options-container">
+        <button class="option-button" onclick="showSection('hoodie')">Hoodie</button>
+        <button class="option-button" onclick="showSection('tshirt')">T-shirt</button>
+    </div>
+
+
+    <div class="container">
+        <div class="section" id="hoodie-section">
+            <h2 class="techPack-Title">Hoodie</h2>
+
+<!--------------------------------------------------- Tech Pack Slideshow  --------------------------------------------------->
+            <div class="slideshow-container">
+                <button class="prev" onclick="changeSlide(-1, 'hoodie')">&#10094;</button>
+                <div class="slides hoodie">
+                    <img src="./Images/tech-Pack/hoody.webp" alt="Hoodie 1">
+                    <img src="./Images/tech-Pack/hoody2.webp" alt="Hoodie 2">
+                </div>
+                <button class="next" onclick="changeSlide(1, 'hoodie')">&#10095;</button>
+            </div>
+
+
+<!--------------------------------------------------- DownloadButton  --------------------------------------------------->
+            <a href="hoodie_catalog.pdf" download class="download-button">Dutchman Hoodie-TechPack | Download Hoodie Catalog</a>
+            
+
+
+<!--------------------------------------------------- Dropdown options  --------------------------------------------------->
+<div class="headers-container">
+    <div class="headers">
+        <h2>FABRIC</h2>
+        <div class="header" onclick="toggleInfo('hoodie-info1', this)">
+            
+            <h3>FABRIC Type <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info1">
+                Organic Cotton
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info2', this)">
+            <h3>Fabric GSM <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info2">
+                460 GSM
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info3', this)">
+            <h3>Fabric Material<span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info3">
+                French Terry Cotton
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info4', this)">
+            <h3>Fabric Source <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info4">
+                Pakistan
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info5', this)">
+            <h3>Fabric Color <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info5">
+                <div class="child-text">Hex Code: #C42127
+                    <label class="antique-red-label"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="right-headers">
+        <h2>THRED</h2>
+        <div class="header" onclick="toggleInfo('hoodie-info6', this)">
+            <h3>Thread Type <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info6">
+                Two Thread Chain stitch
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info7', this)">
+            <h3>Thread Weight <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info7">
+                All Purpose/Thread 50 Pt
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info8', this)">
+            <h3>Thread Material <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info8">
+                Cotton
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info9', this)">
+            <h3>Thread Source <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info9">
+                United States
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info10', this)">
+            <h3>Thread Color <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info10">
+                <div class="child-text">Hex Code: #000000
+                    <label class="black-label"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        
+<div class="section" id="tshirt-section" style="display:none">
+            <h2>T-shirt</h2>
+            <div class="slideshow-container">
+                <button class="prev" onclick="changeSlide(-1, 'tshirt')">&#10094;</button>
+                <div class="slides tshirt">
+                    <img src="./Images/tech-Pack/t-shirt.webp" alt="T-shirt 1">
+                    <img src="./Images/tech-Pack/t-shirt2.webp" alt="T-shirt 2">
+                </div>
+                <button class="next" onclick="changeSlide(1, 'tshirt')">&#10095;</button>
+            </div>
+            <a href="tshirt_catalog.pdf" download class="download-button">Download T-shirt Catalog</a>
+
+        <div class="headers-container2"> 
+            <div class="headers2">
+                <h2>FABRIC</h2>
+                <div class="header" onclick="toggleInfo('tshirt-info1', this)">
+                    <h3>T-shirt Header 1 <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info1">
+                        Information about T-shirt Header 1.
+                    </div>
+                </div>
+                <div class="header" onclick="toggleInfo('tshirt-info2', this)">
+                    <h3>T-shirt Header 2 <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info2">
+                        Information about T-shirt Header 2.
+                    </div>
+                </div>
+                <div class="header" onclick="toggleInfo('tshirt-info3', this)">
+                    <h3>T-shirt Header 3 <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info3">
+                        Information about T-shirt Header 3.
+                    </div>
+                </div>
+                <div class="header" onclick="toggleInfo('tshirt-info4', this)">
+                    <h3>T-shirt Header 4 <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info4">
+                        Information about T-shirt Header 4.
+                    </div>
+                </div>
+                <div class="header" onclick="toggleInfo('tshirt-info5', this)">
+                    <h3>T-shirt Header 5 <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info5">
+                        Information about T-shirt Header 5.
+                    </div>
+                </div>
+            </div>
+            <div class="right-headers2">
+                <h2>THRED</h2>
+                <div class="header" onclick="toggleInfo('tshirt-info6', this)">
+                    <h3>Thread Type <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info6">
+                        Two Thread Chain stitch
+                    </div>
+                </div>
+                <div class="header" onclick="toggleInfo('tshirt-info7', this)">
+                    <h3>Thread Weight <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info7">
+                        All Purpose/Thread 50 Pt
+                    </div>
+                </div>
+                <div class="header" onclick="toggleInfo('tshirt-info8', this)">
+                    <h3>Thread Material <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info8">
+                        Cotton
+                    </div>
+                </div>
+                <div class="header" onclick="toggleInfo('tshirt-info9', this)">
+                    <h3>Thread Source <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info9">
+                        United States
+                    </div>
+                </div>
+                <div class="header" onclick="toggleInfo('tshirt-info10', this)">
+                    <h3>Thread Color <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info10">
+                        <div class="child-text">Hex Code: #000000
+                            <label class="black-label"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+<!--------------------------------------------------- Newsletter Subscription  --------------------------------------------------->
+<div id="fg-title"><h2>Fair Game</h2></div>
+
+<Div id="contact-info">
+    <p>fairgame.sm@gmail.com</p>
+    <p>Arizona, USA</p>
+    <p>123-456-7890</p>
+</Div>
+
+<div class="semi-container">
+    <div class="semi-circle">
+        <h3>Stay informed,join our</h3><br><br>
+        <h3 id="newsletter-text">Newsletter</h3>
+        <p>Enter your email here*</p><br><br><br>
+
+        <div class="form-container">
+            <form id="emailForm" onsubmit="submitEmail(event)">
+                <div class="input-group">
+                    <input type="email" id="email" name="email" required placeholder=" ">
+                    <label for="email" class="input-label">Email Address</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+    
+    <script src="./javaScript/garments.js"></script>
+</body>
+</html>
