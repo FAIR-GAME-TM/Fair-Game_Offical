@@ -59,10 +59,10 @@ body {
     gap: 20px;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 75%;
+    width: 85%;
 }
 .section {
-    background-color: rgba(143, 145, 138, 0.688);
+    background-color: hwb(0 80% 20%);
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

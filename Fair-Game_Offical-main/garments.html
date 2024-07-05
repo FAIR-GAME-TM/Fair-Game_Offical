@@ -68,44 +68,83 @@
 
 
 <!--------------------------------------------------- Dropdown options  --------------------------------------------------->
-            <div class="headers">
-                <div class="header" onclick="toggleInfo('hoodie-info1', this)">
-                    <h3>FABRIC <span class="arrow">&#9654;</span></h3>
-                    <div class="header-info" id="hoodie-info1">
-                        TYPE: Organic Cotton
-                    </div>
-                </div>
-                <div class="header" onclick="toggleInfo('hoodie-info2', this)">
-                    <h3>Fabric GSM <span class="arrow">&#9654;</span></h3>
-                    <div class="header-info" id="hoodie-info2">
-                        460 GSM
-                    </div>
-                </div>
-                <div class="header" onclick="toggleInfo('hoodie-info3', this)">
-                    <h3>Fabric Material<span class="arrow">&#9654;</span></h3>
-                    <div class="header-info" id="hoodie-info3">
-                        French Terry Cotton
-                    </div>
-                </div>
-                <div class="header" onclick="toggleInfo('hoodie-info4', this)">
-                    <h3>Fabric Source <span class="arrow">&#9654;</span></h3>
-                    <div class="header-info" id="hoodie-info4">
-                        Pakistan
-                    </div>
-                </div>
-                <div class="header" onclick="toggleInfo('hoodie-info5', this)">
-                    <h3>Fabric Color <span class="arrow">&#9654;</span></h3>
-                    <div class="header-info" id="hoodie-info5">
-                        <div class="child-text">Hex Code: #C42127
-                            <label class="antique-red-label"></label>
-                        </div>
-                    </div>
+<div class="headers-container">
+    <div class="headers">
+        <h2>FABRIC</h2>
+        <div class="header" onclick="toggleInfo('hoodie-info1', this)">
+            
+            <h3>FABRIC Type <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info1">
+                Organic Cotton
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info2', this)">
+            <h3>Fabric GSM <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info2">
+                460 GSM
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info3', this)">
+            <h3>Fabric Material<span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info3">
+                French Terry Cotton
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info4', this)">
+            <h3>Fabric Source <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info4">
+                Pakistan
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info5', this)">
+            <h3>Fabric Color <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info5">
+                <div class="child-text">Hex Code: #C42127
+                    <label class="antique-red-label"></label>
                 </div>
             </div>
         </div>
-
+    </div>
+    
+    <div class="right-headers">
+        <h2>THRED</h2>
+        <div class="header" onclick="toggleInfo('hoodie-info6', this)">
+            <h3>Thread Type <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info6">
+                Two Thread Chain stitch
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info7', this)">
+            <h3>Thread Weight <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info7">
+                All Purpose/Thread 50 Pt
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info8', this)">
+            <h3>Thread Material <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info8">
+                Cotton
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info9', this)">
+            <h3>Thread Source <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info9">
+                United States
+            </div>
+        </div>
+        <div class="header" onclick="toggleInfo('hoodie-info10', this)">
+            <h3>Thread Color <span class="arrow">&#9654;</span></h3>
+            <div class="header-info" id="hoodie-info10">
+                <div class="child-text">Hex Code: #000000
+                    <label class="black-label"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
         
-        <div class="section" id="tshirt-section" style="display:none;">
+<div class="section" id="tshirt-section" style="display:none">
             <h2>T-shirt</h2>
             <div class="slideshow-container">
                 <button class="prev" onclick="changeSlide(-1, 'tshirt')">&#10094;</button>
@@ -116,7 +155,10 @@
                 <button class="next" onclick="changeSlide(1, 'tshirt')">&#10095;</button>
             </div>
             <a href="tshirt_catalog.pdf" download class="download-button">Download T-shirt Catalog</a>
-            <div class="headers">
+
+        <div class="headers-container2"> 
+            <div class="headers2">
+                <h2>FABRIC</h2>
                 <div class="header" onclick="toggleInfo('tshirt-info1', this)">
                     <h3>T-shirt Header 1 <span class="arrow">&#9654;</span></h3>
                     <div class="header-info" id="tshirt-info1">
@@ -148,6 +190,42 @@
                     </div>
                 </div>
             </div>
+            <div class="right-headers2">
+                <h2>THRED</h2>
+                <div class="header" onclick="toggleInfo('tshirt-info6', this)">
+                    <h3>Thread Type <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info6">
+                        Two Thread Chain stitch
+                    </div>
+                </div>
+                <div class="header" onclick="toggleInfo('tshirt-info7', this)">
+                    <h3>Thread Weight <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info7">
+                        All Purpose/Thread 50 Pt
+                    </div>
+                </div>
+                <div class="header" onclick="toggleInfo('tshirt-info8', this)">
+                    <h3>Thread Material <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info8">
+                        Cotton
+                    </div>
+                </div>
+                <div class="header" onclick="toggleInfo('tshirt-info9', this)">
+                    <h3>Thread Source <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info9">
+                        United States
+                    </div>
+                </div>
+                <div class="header" onclick="toggleInfo('tshirt-info10', this)">
+                    <h3>Thread Color <span class="arrow">&#9654;</span></h3>
+                    <div class="header-info" id="tshirt-info10">
+                        <div class="child-text">Hex Code: #000000
+                            <label class="black-label"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 

@@ -1,195 +1,237 @@
-body {
-    width: 95%;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-}
-
-/************************************************* NavBar Style *************************************************/
-.navbar {
+/*************************************************************************** Navigation & header ***************************************************************************/
+header{
     display: flex;
-    margin-top: 0.5%;
+    margin-top: 2% ;
+    vertical-align: center;
 }
-
-.fairLogo{
-    width: 15%;
-    margin-top: 0.9%;
-    margin-left: 1%;
+.logoImg{
+    padding-left: 2%;
+    width:3.5%;
 }
 
 .logo{
-    width:100%;
-    height: 100%;
-}
-        
-.nav-list {
-    width: 72%;
-    margin-left: 5%;
-    display: flex;
-    list-style-type: none; 
-    background-color: #333;
+    margin-left: 0.3%;
+    width:15% ;
+    height:10% ;
 }
 
-.nav-item {
-    position: relative;
+.nav{
+    width: 90%;
+    margin-top: 0.5%;
     margin-left: 8%;
-    padding: 10px;
 }
 
-.nav-link {
-    width: 100%;
-    font-size: 28px;
-    color: white;
+.navItem{
+    padding-top: 5%;
+    margin-left: 8%;
     text-decoration: none;
-    display: block;
+    font-size: 20px;
+    color: black;
 }
 
-.nav-item:hover  {
-    background-color: #555;
-
+.navItem:hover{
+    font-weight: bold;
+    color: red;
 }
 
-/**************************************************** Tech Pack Styling ****************************************************/
-.options-container {
-    text-align: center;
-    margin: 20px 0;
+
+.contact{
+    margin-left: 20%;    
+    padding:1%;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #ffffff;
 }
 
-.container{
+.contact:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(243, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.Blog{
+    font-weight: bold;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+/************************************************* Blog Grid Styles *************************************************/
+
+
+
+/************************************************* Blog Post Container Styles *************************************************/
+
+header{
+    margin-bottom: 1%;
+}
+
+.returnOne{
+    text-decoration: none;
+    margin-left: 25%;
+    color: black;
+    font-size: 12px;
+}
+
+.returnTwo{
+    text-decoration: none;
+    margin-left: 72%;
+    margin-bottom: 5%;
+    color: black;
+    font-size: 12px;
+}
+
+.blogContainer{
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 3% 6% 3% 6%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.blog-Read{
+    font-size: 12px;
+}
+
+.crown{
+    width: 3%;
+}
+
+.blogImg{
+    width:100% ;
+    height:70% ;
+    margin-bottom: 8%;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 100;
+    padding-bottom: 2%;
+}
+
+.iconContainer{
+    display: flex;
+    margin-left: 1%;
+}
+
+
+.socialIcons{
+    width: 5%;
+    margin-right: 3%;
+}
+.soicalInteractions{
+    margin-left: 2%;
+    align-content: center;
+}
+
+.interactions{
+    font-size: 12px;
+    margin-right: 4%;
+}
+
+.heartOne{
+    margin-top: 3%;
+    margin-left: 60%;
+}
+
+/************************************************* Blog Post Container Styles *************************************************/
+
+
+
+
+
+
+
+/************************************************* Recent Blog Post Styles *************************************************/
+.recentPost{
+    margin-left: 25%;
+}
+
+.row{
+    display: flex;
+    width: 52%;
+    margin-left: 24%;
+}
+
+.recentBlogs-Container{
+    width: 40%;
+    height: 50%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+    border: 1px solid black;
+}
+
+.recentBlogs-Img{
+    width: 100%;
+    height: 10%;
+}
+
+.recentBlogs-info{
+    width: 90%;
     margin: 0 auto;
 }
 
-.techPack-Title{
-    margin-top: 2%;
-    text-align: center;
-}
-
-.option-button {
-    background-color: #b8860b; /* Dark Yellow */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.option-button:hover {
-    background-color: #a37402; /* Slightly darker yellow */
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-}
-
-.section {
-    display: none;
-    text-align: center;
-}
-
-#hoodie-section {
-    display: block;
-}
-
-.slideshow-container {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-}
-
-.slides img {
-    width: 100%;
-    display: none;
-}
-
-.slides img:first-child {
-    display: block;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    user-select: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-}
-
-.next {
-    right: -50px; /* Positioning outside the slideshow frame */
-}
-
-.prev {
-    left: -50px; /* Positioning outside the slideshow frame */
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.download-button {
-    display: block;
-    margin: 20px 0;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
+.recentBlogs-title{
     text-decoration: none;
-    text-align: center;
-    border-radius: 4px;
+    color: black;
+    font-size: 14px;
+}
+.add{
+    padding-bottom: 5%;
 }
 
-.download-button:hover {
-    background-color: #555;
-   
+
+.view-Img{
+    width: 5%;
 }
 
-/* Fabric section background coloring */
-.headers {
- padding: 10px;
- background-color: #e0e0e0;   
-    
+.comment-Img{
+    width: 5%;
 }
 
-.headers2 {
-padding: 10px;
-background-color: #e0e0e0;  
+.heartTwo{
+    margin-top: 3%;
+    margin-left: 10%;
 }
 
-.header h3 {
-    cursor: pointer;
-    margin: 0;
-    /* padding: 10px; */
-    /* background-color: #a19f99; Dark Yellow */
-    color:black;
-    border-radius: 4px;
+.heartTwo-Img{
+    width: 5%;
 }
 
-.header .arrow {
-    float: right;
-    transition: transform 0.3s;
+/************************************************* Recent Blog Post Styles *************************************************/
+
+
+
+/************************************************* Comments Styles *************************************************/
+
+.comments-Container{
+    width: 52%;
+    margin-left: 24%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    border: 1px solid black;
 }
 
-.header-info {
-    display: none;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-top: none;
-    background-color: hwb(50 89% 9%);
-    border-radius: 0 0 4px 4px;
+.comments-title{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding-bottom: 3%;
 }
 
-.header.active .arrow {
-    transform: rotate(90deg);
+#commentInput{
+    border: none;
+    padding: 8% 37%;
 }
+
+/************************************************* Comments Styles *************************************************/
+
 
 
 
@@ -390,6 +432,4 @@ button:hover {
     background-color:#f9f9f9;
     padding: 10px;
 }
-/* h2 {
-    margin-right: 480px;
-} */
+/************************************************* Subscription Styling *************************************************/

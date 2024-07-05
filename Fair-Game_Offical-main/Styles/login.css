@@ -62,11 +62,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0 auto;
-    width: 95%;
 }
+
 .login-container {
     margin: 0 auto;
     margin-top: 10%;    
+    margin-bottom: 15%;    
     background-color: rgb(255, 255, 255);
     padding: 60px;
     border-radius: 8px;
@@ -104,4 +105,15 @@ body {
 
 #errorMessage{
     color: red;
+}
+
+/*************************************************************************** Footer Styles ***************************************************************************/
+
+footer{
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 5%;
+    background-color: black;
+    width: 100%;
 }

@@ -7,24 +7,24 @@ header{
 }
 .logoImg{
     padding-left: 2%;
-    width:3.5%;
+    width:2.5%;
 }
 
 .logo{
     margin-left: 0.3%;
-    width:15% ;
-    height:10% ;
+    width:10% ;
+    height:5% ;
 }
 
 .nav{
     width: 90%;
     margin-top: 0.5%;
-    margin-left: 8%;
+    margin-left: 3%;
 }
 
 .navItem{
     padding-top: 5%;
-    margin-left: 8%;
+    margin-left: 3%;
     text-decoration: none;
     font-size: 20px;
     color: black;
@@ -37,12 +37,12 @@ header{
 
 
 .contact{
-    margin-left: 20%;
+    margin-left: 40%;
     padding:1%;
     font-size: 20px;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
+    /* border: 2px solid rgb(0, 0, 0); */
     background-color: #ffffff;
 }
 
