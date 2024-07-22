@@ -1,0 +1,107 @@
+/*************************************************************************** Navigation & header ***************************************************************************/
+header{
+    display: flex;
+    margin-top: 2% ;
+    vertical-align: center;
+}
+.logoImg{
+    padding-left: 2%;
+    width:2.5%;
+}
+
+.logo{
+    margin-left: 0.3%;
+    width:10% ;
+    height:5% ;
+}
+
+.nav{
+    width: 90%;
+    margin-top: 0.5%;
+    margin-left: 3%;
+}
+
+.navItem{
+    padding-top: 5%;
+    margin-left: 3%;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.navItem:hover{
+    font-weight: bold;
+    color: red;
+}
+
+
+.contact{
+    margin-left: 50%;
+    padding:1%;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    /* border: 2px solid rgb(0, 0, 0); */
+    background-color: #ffffff;
+}
+
+.contact:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(243, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.Repository{
+    font-weight: bold;
+}
+
+/******************************************** Repository Login ********************************************/
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    width: 95%;
+}
+.login-container {
+    margin: 0 auto;
+    margin-top: 10%;    
+    background-color: rgb(255, 255, 255);
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0.267);
+    width: 20%;
+    text-align: center;
+}
+.login-container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container input[type="submit"] {
+    width: 70%;
+    padding: 10px;
+    margin-top: 2%;
+    border: none;
+    border-radius: 4px;
+    background-color: #a72828;
+    color: white;
+    font-size: 16px;
+}
+.login-container input[type="submit"]:hover {
+    background-color: #ff0000;
+}
+
+#errorMessage{
+    color: red;
+}

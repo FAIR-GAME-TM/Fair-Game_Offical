@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./Styles/login.css">
+
+    <!-- Tab Name &Logo -->
+    <link rel="shortcut icon" href="./Images/logo/Artboard_1.png" type="image/x-icon" />
+    <title>Fair-Game&#8482; | Login</title>
+
+    <header>
+        <img class="logoImg" src="./Images/logo/Artboard_1.png" alt=""/>
+        <img class="logo" src="./Images/logo/Fair-GameLogo.png" alt="Fair Game Logo"/>
+        <div class="nav">
+            <a class="navItem" href="./index.html">Home</a>
+            <a class="navItem" href="./shop.html">Shop</a>
+            <a class="navItem" href="./Blog.html">Blog</a>
+            <a class="navItem Repository" href="./login.html">Log In</a>
+            <a class="contact" href="./contact.html">Contact Us</a>
+        </div>
+    </header>
+</head>
+
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form  id="loginForm" action="/submit-login" method="post" enctype="multipart/form-data">
+            <input id="username" type="text" name="username" placeholder="Username" required>
+            <input id="password" type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Submit">
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+
+    <script src="./javaScript/login.js"></script>
+</body>
+</html>
