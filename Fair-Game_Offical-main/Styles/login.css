@@ -50,10 +50,11 @@ header{
     background-color: rgb(243, 0, 0);
     border: 2px solid rgb(255, 255, 255);
 }
-
+/* Css for create button*/
 .create-account-section {
     text-align: center;
     margin-top: 20px;
+    display: block; 
 }
 
 .create-account-btn {
@@ -71,6 +72,11 @@ header{
     background-color: #007bff;
     color: white;
 }
+
+p {
+    font-size: 18px;
+}
+
 
 .Repository{
     font-weight: bold;
