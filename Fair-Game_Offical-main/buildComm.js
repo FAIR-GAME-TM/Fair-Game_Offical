@@ -1,9 +1,9 @@
-
-const fs = require('fs');
-const pathModule = require('path');
 if (!fs.existsSync(distPath)) {
     fs.mkdirSync(distPath);
 }
+const fs = require('fs');
+const pathModule = require('path');
+
 
 // Adjust paths to reflect the subfolder structure
 const srcDir = pathModule.join(__dirname, 'Fair-Game_Offical-main');  // Source folder
