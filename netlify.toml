@@ -4,5 +4,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "Fair-Game_Official-main/index.html"
   status = 200
