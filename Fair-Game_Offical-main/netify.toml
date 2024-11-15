@@ -1,9 +1,10 @@
 [build]
-  base = "Fair-game_Offical-main/"  # We're now in the root of 'Fair-Game_Offical-main', so base is the current directory
-  command = "node buildComm.js"  # This will run the build script inside this subfolder
-  publish = "dist"  # The build output will be placed in 'Fair-Game_Offical-main/dist'
+  base = "Fair-Game_Offical-main"  # Set the base to the subfolder containing the build files
+  command = "node buildComm.js"    # The build command inside the subfolder
+  publish = "Fair-Game_Offical-main/dist"  # The output directory (inside the subfolder)
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
