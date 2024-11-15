@@ -1,8 +1,0 @@
-[build]
-  command = "node buildComm.js"  # Runs your build script
-  publish = "dist"              # Replace "dist" with your output folder
-
-[[redirects]]
-  from = "/*"
-  to = "Fair-Game_Offical-main/index.html"
-  status = 200
