@@ -4,9 +4,11 @@ const path = require('path');
 const srcDir = path.join(__dirname, 'Fair-Game_Offical-main');  // Source folder
 const distDir = path.join(__dirname, 'Fair-Game_Offical-main', 'dist');  // Output folder
 
-// Create dist folder if it doesn't exist
-if (!fs.existsSync(distDir)) {
-    fs.mkdirSync(distDir);
+/const fs = require('fs');
+const path = './dist';
+
+if (!fs.existsSync(path)) {
+    fs.mkdirSync(path);
 }
 
 // Copy all files from the source folder to the dist folder (this is just an example)
