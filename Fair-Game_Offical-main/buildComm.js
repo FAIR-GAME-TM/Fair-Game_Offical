@@ -4,7 +4,7 @@ const path = require('path');
 const srcDir = path.join(__dirname, 'Fair-Game_Offical-main');  // Source folder
 const distDir = path.join(__dirname, 'Fair-Game_Offical-main', 'dist');  // Output folder
 
-/const fs = require('fs');
+/const fs = require('fs')/;
 const path = './dist';
 
 if (!fs.existsSync(path)) {
