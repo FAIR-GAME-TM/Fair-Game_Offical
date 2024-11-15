@@ -1,15 +1,15 @@
 const fs = require('fs');
 const path = require('path');
 
-const srcDir = path.join(__dirname, 'src');  // Source folder (your HTML, CSS, JS files)
-const distDir = path.join(__dirname, 'dist'); // Output folder
+const srcDir = path.join(__dirname, 'Fair-Game_Offical-main');  // Source folder
+const distDir = path.join(__dirname, 'Fair-Game_Offical-main', 'dist');  // Output folder
 
 // Create dist folder if it doesn't exist
 if (!fs.existsSync(distDir)) {
     fs.mkdirSync(distDir);
 }
 
-// Copy files from src to dist
+// Copy all files from the source folder to the dist folder (this is just an example)
 fs.readdirSync(srcDir).forEach(file => {
     const srcFilePath = path.join(srcDir, file);
     const distFilePath = path.join(distDir, file);
@@ -19,4 +19,4 @@ fs.readdirSync(srcDir).forEach(file => {
     }
 });
 
-console.log('Build completed');
+console.log('Build completed!');
