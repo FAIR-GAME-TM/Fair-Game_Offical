@@ -1,6 +1,6 @@
 [build]
-  publish = "public"  # Replace "public" with the folder where your site files are located
-  command = ""        # No build command needed for static sites
+  command = "node buildComm.js"
+  publish = "dist"  # Replace "dist" with the folder where your built files are output
 
 [[redirects]]
   from = "/*"
