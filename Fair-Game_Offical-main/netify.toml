@@ -1,0 +1,9 @@
+[build]
+  base = "Fair-Game_Offical-main"  # This specifies that the base directory is inside the subfolder
+  command = "node buildComm.js"   # The build script to run
+  publish = "Fair-Game_Offical-main/dist"  # Path to the directory where the build outputs are stored
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
