@@ -10,5 +10,5 @@ base ="Fair-Game_Offical-main"
 
 [[redirects]]
   from = "/*"
-  to = "/login.html"
+  to = "Fair-Game_Offical-main/login.html"
   status = 200
