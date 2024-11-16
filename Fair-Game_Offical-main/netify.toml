@@ -7,3 +7,8 @@ output_dir = "dist"
 command = "node buildComm.js"
 publish = "dist/"
 base ="Fair-Game_Offical-main/index.html"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
