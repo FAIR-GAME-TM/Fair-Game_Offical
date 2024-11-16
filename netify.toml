@@ -1,9 +1,0 @@
-[build]
-  base = "Fair-Game_Offical-main"   # This tells Netlify to look inside 'Fair-Game_Offical-main' folder
-  command = "node buildComm.js"     # The command to run your build script inside the subfolder
-  publish = "Fair-Game_Offical-main/dist"   # The directory containing the output (dist)
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
