@@ -1,23 +1,25 @@
 const fs = require('fs');
 const path = require('path');
 
-// Set up directories
-const srcDir = path.join(__dirname);  // Current folder
-const distDir = path.join(__dirname, 'dist');  // Inside current folder, go to 'dist'
+function buildProject() {
+    const srcDir = path.resolve(__dirname, 'src');
+    const distDir = path.resolve(__dirname, 'dist');
 
-// Ensure dist directory exists
-if (!fs.existsSync(distDir)) {
-  fs.mkdirSync(distDir, { recursive: true });
+    // Ensure the dist directory exists
+    if (!fs.existsSync(distDir)) {
+        fs.mkdirSync(distDir, { recursive: true });
+    }
+
+    // Example: Copy all files from src to dist
+    fs.readdirSync(srcDir).forEach(file => {
+        const srcFile = path.join(srcDir, file);
+        const destFile = path.join(distDir, file);
+
+        fs.copyFileSync(srcFile, destFile);
+        console.log(`Copied ${srcFile} to ${destFile}`);
+    });
+
+    console.log('Build complete!');
 }
 
-// Copy all files from the source folder to the dist folder
-fs.readdirSync(srcDir).forEach(file => {
-  const srcFilePath = path.join(srcDir, file);
-  const distFilePath = path.join(distDir, file);
-
-  if (fs.lstatSync(srcFilePath).isFile()) {
-    fs.copyFileSync(srcFilePath, distFilePath);
-  }
-});
-
-console.log('Build completed!');
+buildProject();
