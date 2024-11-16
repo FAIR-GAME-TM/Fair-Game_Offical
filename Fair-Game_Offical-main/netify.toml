@@ -6,4 +6,4 @@ output_dir = "dist"
 [build]
 command = "node buildComm.js"
 publish = "dist/"
-base ="Fair-Game_Offical-main"
+base ="Fair-Game_Offical-main/"
