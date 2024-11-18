@@ -50,31 +50,29 @@ header{
     background-color: rgb(243, 0, 0);
     border: 2px solid rgb(255, 255, 255);
 }
-/* Css for create button*/
-.create-account-section {
-    text-align: center;
-    margin-top: 20px;
-    display: block; 
-}
-
 .create-account-btn {
-    color: #007bff;
+    display: inline-block;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    padding: 8px 15px;
+    color: #007bff;
+    padding: 10px 20px;
     border: 2px solid #007bff;
     border-radius: 5px;
-    background-color: white;
+    background-color: #ffffff;
     transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 }
 
 .create-account-btn:hover {
     background-color: #007bff;
-    color: white;
+    color: #ffffff;
+    border-color: #0056b3;
 }
 
-p {
-    font-size: 18px;
+.create-account-btn:active {
+    background-color: #0056b3;
+    border-color: #004494;
 }
 
 
